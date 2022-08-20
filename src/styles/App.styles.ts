@@ -16,4 +16,6 @@ export const Map = styled.div`
   margin: auto;
   margin-top: 50px;
   background-size: 100%;
+
+  position: relative;
 `;
