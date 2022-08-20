@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Container, Map } from './styles/App.styles';
 import { Character } from './components/Character'
 import { useCharacter } from './hooks/useCharacter'
+import { mapSpots } from './data/mapSpots'
 
 const App = () => {
   const char = useCharacter()
