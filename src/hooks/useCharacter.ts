@@ -1,5 +1,6 @@
 import { useState} from 'react'
 import { CharacterSides } from '../types/CharacterSides'
+import { mapSpots } from '../data/mapSpots'
 
 
 export const useCharacter = () => {
@@ -47,8 +48,12 @@ export const useCharacter = () => {
 
   const canMove = (x: number, y: number) => {
     if(x < 0 || y < 0) return false
+
+    if(mapSpots[y][x] == 1){
+      return true
+    }
     
-    return true
+    return false
   }
 
   return {
