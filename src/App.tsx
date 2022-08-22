@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { Container, Map } from './styles/App.styles';
+import { Container, Map, Header } from './styles/App.styles';
 import { Character } from './components/Character'
 import { useCharacter } from './hooks/useCharacter'
 
@@ -37,6 +37,8 @@ const App = () => {
 
   return(
     <Container>
+      <Header>The Queen's Call</Header>
+      <p>World RPG Game</p>
       <Map>
         <Character x={char.x} y={char.y} side={char.side} name={char.name}/>
       </Map>
