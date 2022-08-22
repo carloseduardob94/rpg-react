@@ -5,7 +5,7 @@ import { useCharacter } from './hooks/useCharacter'
 import { mapSpots } from './data/mapSpots'
 
 const App = () => {
-  const char = useCharacter()
+  const char = useCharacter('Eduardo')
 
   useEffect(() => {
     window.addEventListener('keydown', handleKeyDown)
@@ -38,7 +38,7 @@ const App = () => {
   return(
     <Container>
       <Map>
-        <Character x={char.x} y={char.y} side={char.side} />
+        <Character x={char.x} y={char.y} side={char.side} name={char.name}/>
       </Map>
     </Container>
   )
