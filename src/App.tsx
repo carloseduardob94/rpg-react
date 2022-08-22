@@ -37,11 +37,11 @@ const App = () => {
 
   return(
     <Container>
-      <Header>The Queen's Call</Header>
-      <p>World RPG Game</p>
-      <Map>
-        <Character x={char.x} y={char.y} side={char.side} name={char.name}/>
-      </Map>
+        <Header>The Queen's Call</Header>
+        <p>World RPG Game</p>
+        <Map>
+          <Character x={char.x} y={char.y} side={char.side} name={char.name}/>
+        </Map>
     </Container>
   )
 }

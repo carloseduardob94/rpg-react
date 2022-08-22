@@ -1,19 +1,18 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
-  background-color: #24282F;
+export const Container = styled.div` 
+  background-image: url('/assets/bg.jpg');
   min-height: 100vh;
   color: #fff;
   overflow-y: auto;
   display: grid;
-
+       
   > p{
     margin: auto;
     font-size: 23px;
     font-family: 'Berkshire Swash', cursive;
     border-bottom: 1px solid #CCC;
   }
-
 `;
 
 export const Header = styled.header`
